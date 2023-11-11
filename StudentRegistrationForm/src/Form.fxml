@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="512.0" prefWidth="600.0" style="-fx-background-color: #f2f2dc;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FormController">
+   <children>
+      <Label fx:id="asdf" alignment="CENTER" contentDisplay="CENTER" layoutX="92.0" layoutY="14.0" prefHeight="41.0" prefWidth="416.0" style="-fx-background-color: aqua;" text="Student Registration Form" textAlignment="CENTER">
+         <effect>
+            <SepiaTone />
+         </effect>
+         <font>
+            <Font name="Bell MT Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="72.0" prefHeight="41.0" prefWidth="179.0" text="Full Name" />
+      <Label layoutX="33.0" layoutY="128.0" prefHeight="41.0" prefWidth="179.0" text="Age" />
+      <Label layoutX="33.0" layoutY="184.0" prefHeight="41.0" prefWidth="179.0" text="Telephone Number" />
+      <Label layoutX="33.0" layoutY="236.0" prefHeight="41.0" prefWidth="179.0" text="Address" />
+      <Label layoutX="33.0" layoutY="295.0" prefHeight="41.0" prefWidth="179.0" text="Email Address" />
+      <JFXTextField fx:id="fullNameField" layoutX="281.0" layoutY="77.0" prefHeight="31.0" prefWidth="298.0" promptText="example- Alfred Lord Tennyson" />
+      <JFXTextField fx:id="phoneField" layoutX="281.0" layoutY="189.0" prefHeight="31.0" prefWidth="158.0" promptText="example- 0705606683" />
+      <JFXTextField fx:id="addressField" layoutX="281.0" layoutY="241.0" prefHeight="31.0" prefWidth="298.0" promptText="example- 4335 dewela kegalle" />
+      <JFXTextField fx:id="ageField" layoutX="281.0" layoutY="128.0" prefHeight="31.0" prefWidth="95.0" promptText="example- 20" />
+      <JFXTextField fx:id="emailField" layoutX="281.0" layoutY="300.0" prefHeight="31.0" prefWidth="298.0" promptText="example- mranweea793@gmail.com" />
+      <JFXButton fx:id="submitButton" buttonType="RAISED" layoutX="300.0" layoutY="424.0" onAction="#submitButtonAction" prefHeight="41.0" prefWidth="179.0" ripplerFill="#13c6ee" style="-fx-background-color: green;" text="Submit">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="clearButton" buttonType="RAISED" layoutX="92.0" layoutY="424.0" onAction="#clearButtonAction" prefHeight="41.0" prefWidth="119.0" ripplerFill="#152fda" style="-fx-background-color: red;" text="Clear" />
+      <Label layoutX="33.0" layoutY="352.0" prefHeight="41.0" prefWidth="179.0" text="Course Name" />
+      <JFXTextField fx:id="courseField" layoutX="281.0" layoutY="357.0" prefHeight="31.0" prefWidth="298.0" promptText="example- icet certified developer" />
+   </children>
+</AnchorPane>
